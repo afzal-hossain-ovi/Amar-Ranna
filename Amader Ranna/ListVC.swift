@@ -10,7 +10,7 @@ import UIKit
 
 class ListVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    var ds: DataService! = DataService.instance
+    var ds = DataService()
     @IBOutlet weak var tableView: UITableView!
     var tagNumber = 0
     
@@ -19,13 +19,9 @@ class ListVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         super.viewDidLoad()
         ds.doneAllData()
         tableView.reloadData()
-        
     }
     
 
-    
-
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -144,9 +140,9 @@ class ListVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         }
     }
 
-    @IBAction func backBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
+//    @IBAction func backBtnPressed(_ sender: Any) {
+//        dismiss(animated: true, completion: nil)
+//    }
    
 
 }

@@ -11,7 +11,7 @@ import Foundation
 
 class DataService {
     
-    static var instance = DataService()
+    //static var instance = DataService()
     
     var mashModel = [DataModel]()
     var mangsoModel = [DataModel]()

@@ -69,7 +69,7 @@ class MainVC: UIViewController {
     
     @IBAction func btnPressed(btn: UIButton) {
         tagNumber = btn.tag
-        performSegue(withIdentifier: "toListVC", sender: nil)
+        performSegue(withIdentifier: "toListVC", sender: btn)
         
     }
     

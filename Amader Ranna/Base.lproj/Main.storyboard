@@ -283,7 +283,7 @@
                                         <rect key="frame" x="0.0" y="28" width="345" height="53"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wmu-hp-1cS" id="URJ-FB-W0B">
-                                            <rect key="frame" x="0.0" y="0.0" width="345" height="53"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="52.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ds3-kn-eB1">
@@ -347,7 +347,7 @@
                     <navigationItem key="navigationItem" id="q3g-Wi-K7o">
                         <barButtonItem key="leftBarButtonItem" image="Pin Left" id="1pc-jr-N6k">
                             <connections>
-                                <action selector="backBtnPressed:" destination="fw2-Wr-yy6" id="ajZ-kw-kDy"/>
+                                <segue destination="BYZ-38-t0r" kind="showDetail" action="showViewController:sender:" id="vwA-s5-CbN"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -491,7 +491,7 @@
                                     <constraint firstAttribute="height" constant="39" id="tcU-dj-y1b"/>
                                 </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rap-do-fF6">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rap-do-fF6">
                                 <rect key="frame" x="16" y="160" width="343" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -552,4 +552,7 @@
         <image name="image" width="450" height="250"/>
         <image name="menu button display" width="28" height="19"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="FXm-Xo-W5c"/>
+    </inferredMetricsTieBreakers>
 </document>
